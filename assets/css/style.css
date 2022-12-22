@@ -1,0 +1,591 @@
+:root {
+  --aqua:#00fff7;
+  --orange: rgb(255, 123, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+
+*::-moz-selection {
+  background: var(--orange);
+  color: white;
+  text-decoration-color: #000;
+}
+
+*::selection {
+  background: var(--orange);
+  color: white;
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+/* =============== Public Starts =============== */
+/* ===Flex=== */
+.d-flex {
+  display: flex;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.f-direction-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* positiion */
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+/* Col-# */
+.col-1 {
+  width: 5.3333333333%;
+  margin: 1.5%;
+}
+
+.col-2 {
+  width: 13.6666666667%;
+  margin: 1.5%;
+}
+
+.col-3 {
+  width: 22%;
+  margin: 1.5%;
+}
+
+.col-4 {
+  width: 30.3333333333%;
+  margin: 1.5%;
+}
+
+.col-5 {
+  width: 38.6666666667%;
+  margin: 1.5%;
+}
+
+.col-6 {
+  width: 47%;
+  margin: 1.5%;
+}
+
+.col-7 {
+  width: 55.3333333333%;
+  margin: 1.5%;
+}
+
+.col-8 {
+  width: 63.6666666667%;
+  margin: 1.5%;
+}
+
+.col-9 {
+  width: 72%;
+  margin: 1.5%;
+}
+
+.col-10 {
+  width: 80.3333333333%;
+  margin: 1.5%;
+}
+
+.col-11 {
+  width: 88.6666666667%;
+  margin: 1.5%;
+}
+
+.col-12 {
+  width: 97%;
+  margin: 1.5%;
+}
+
+/* margin */
+.spacer-5 {
+  margin: 5px 0 0;
+}
+
+.spacer-10 {
+  margin: 10px 0 0;
+}
+
+.spacer-25 {
+  margin: 25px 0 0;
+}
+
+.spacer-50 {
+  margin: 50px 0 0;
+}
+
+.spacer-75 {
+  margin: 75px 0 0;
+}
+
+.spacer-100 {
+  margin: 100px 0 0;
+}
+
+/* Image */
+.img-responsive {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 120%;
+}
+
+p {
+  line-height: 180%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 35px;
+  background: var(--orange);
+  box-shadow: 0 2px 4px rgba(2, 2, 2, 0.2);
+  transition: all 0.3s linear;
+}
+.btn-medium {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-first {
+  padding: 5% 0;
+}
+
+.section-second {
+  padding: 0 0 5%;
+}
+
+article {
+  min-height: 100vh;
+  padding-top: 7%;
+}
+
+/* =============== Public Ends == =============== */
+/* =====header starts==== */
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+header .container {
+  padding: 10px 0;
+}
+header .container .logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+header .container .logo h2 {
+  font-size: 2.5em;
+  color: var(--aqua);
+  letter-spacing: 1.2px;
+}
+header .container .logo h2 span {
+  color: var(--orange);
+  font-size: 0.9em;
+}
+header .container input {
+  display: none;
+}
+header .container label {
+  font-size: 2.5em;
+  color: var(--orange);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+header .container .navbar {
+  font-size: 1.3em;
+}
+header .container .navbar a {
+  color: var(--orange);
+  margin-left: 15px;
+}
+header .container .navbar a:hover {
+  font-weight: 400;
+  color: var(--aqua);
+}
+
+/* =====header ends  ==== */
+
+/* ======main starts====== */
+main {
+  padding: 1% 0 0;
+}
+main .beranda .container .row .col-6 h1 {
+  font-size: 3em;
+  color: var(--aqua);
+  letter-spacing: 1.5px;
+}
+main .beranda .container .row .col-6 h1 span {
+  color: var(--orange);
+  letter-spacing: 2px;
+}
+main .beranda .container .row .col-6 a {
+  color: #fff;
+}
+main .beranda .container .content .row .col-6 h3 {
+  color: var(--orange);
+}
+main .fitur .container .row h2 {
+  font-size: 2em;
+  color: var(--orange);
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+  text-decoration-thickness: 0.15em;
+}
+main .fitur .container .row a {
+  color: #fff;
+}
+main .tentangKami .container h2 {
+  font-size: 2em;
+  color: orangered;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+  text-decoration-thickness: 0.15em;
+}
+main .tentangKami .container p strong {
+  color: var(--aqua);
+  letter-spacing: 1px;
+}
+main .tentangKami .container p span {
+  color: var(--orange);
+  letter-spacing: 2px;
+}
+main .tentangKami .container .row .col-4 {
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main .tentangKami .container .row .col-4 img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+main .tentangKami .container .row .col-4 h3 {
+  font-size: 1.5em;
+}
+main .tentangKami .container .row .col-4 h5 {
+  font-size: 0.8em;
+}
+main .tentangKami .container .row .col-4 .sosmed img {
+  width: 20px;
+  height: 20px;
+}
+main .kontak .container .row h2 {
+  color: var(--orange);
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+  text-decoration-thickness: 0.15em;
+}
+main .kontak .container .row section h3 {
+  font-size: 2.5em;
+  color: var(--aqua);
+  letter-spacing: 1px;
+}
+main .kontak .container .row section h3 span {
+  color: var(--orange);
+  letter-spacing: 3px;
+}
+main .kontak .container .row section img {
+  width: 50%;
+}
+main .kontak .container .row section section th, main .kontak .container .row section section td {
+  padding: 10px;
+  text-align: left;
+}
+main .kontak .container .row section section th {
+  color: var(--orange);
+}
+main .kontak .container .row aside {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+main .kontak .container .row aside h2 {
+  color: var(--orange);
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  -webkit-text-decoration-color: var(--aqua);
+          text-decoration-color: var(--aqua);
+  text-decoration-thickness: 0.15em;
+}
+main .kontak .container .row aside .img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+main .kontak .container .row aside .job a {
+  color: #fff;
+}
+main .kontak .container .row aside .indentity {
+  margin-left: 30px;
+}
+main .kontak .container .row aside .indentity h3 {
+  border-left: 3px solid orangered;
+  color: var(--orange);
+  padding-left: 10px;
+}
+main .kontak .container .row aside .indentity p {
+  margin-left: 10px;
+}
+
+/* ======main ends  ====== */
+/* ======Footer Starts==== */
+footer {
+  background: #fff;
+  padding: 1em 0;
+  font-size: 1.4em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+footer .container strong {
+  color: var(--aqua);
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+footer .container span {
+  color: var(--orange);
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  font-weight: 600px;
+}
+footer .container div {
+  display: inline-block;
+  font-weight: bold;
+}
+footer .container a {
+  color: var(--orange);
+}
+
+/* ======Footer Ends  ==== */
+
+
+
+
+
+
+
+
+/* =========Responsive========= */
+@media screen and (max-width: 160px) {
+  .beranda {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  main .beranda {
+    margin-top: 25px;
+  }
+  main .fitur .container .row h2 {
+    font-size: 1.7em;
+    color: var(--orange);
+    letter-spacing: 3px;
+  }
+  main .fitur .container .row a {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  main .beranda .col-6 p {
+    font-size: 0.9em;
+  }
+  main .fitur .container .row .col-4 {
+    width: 47%;
+  }
+  main .fitur .container .row .col-4 a {
+    font-size: 1em;
+  }
+  main .tentangKami .container .row .col-4 {
+    width: 47%;
+  }
+  main .kontak aside a {
+    font-size: 0.8em;
+  }
+  main .kontak aside .indentity h3 {
+    font-size: 0.9em;
+    padding-left: 10px;
+  }
+  main .kontak aside .indentity p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .container label {
+    visibility: visible;
+    opacity: 1;
+  }
+  header .container .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(253, 253, 253, 0.5);
+    width: 100%;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.4s linear;
+  }
+  header .container .navbar a {
+    font-weight: 600;
+    color: var(--orange);
+    display: block;
+    margin: 15px 25px;
+  }
+  header .container nav.menu-active {
+    transform: scaleY(1);
+    opacity: 0.9;
+  }
+  
+  /* ========main======= */
+  main .beranda {
+    margin-top: 50px;
+  }
+  main .beranda .container div.row {
+    flex-flow: column-reverse;
+  }
+  main .beranda .container div.row .col-6 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  main .beranda .container div.row .col-6 p {
+    font-size: 1em;
+  }
+  main .beranda .container section.row.satu {
+    flex-direction: column;
+  }
+  main .beranda .container section.row.satu .col-6 {
+    width: 100%;
+  }
+  main .beranda .container section.row.dua {
+    flex-direction: column-reverse;
+  }
+  main .beranda .container section.row.dua .col-6 {
+    width: 100%;
+  }
+  main .beranda .container section.row.tiga {
+    flex-direction: column;
+  }
+  main .beranda .container section.row.tiga .col-6 {
+    width: 100%;
+  }
+  main .beranda .container section.row.empat {
+    flex-direction: column-reverse;
+  }
+  main .beranda .container section.row.empat .col-6 {
+    width: 100%;
+  }
+  main .fitur .container .row .col-4 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .tentangKami .container .row .col-4 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  main .kontak .container .row section.col-6 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .kontak .container .row aside.col-6 {
+    width: 100%;
+  }
+  main .kontak .container .row aside.col-6 .indentity a {
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 1em;
+  }
+}
